@@ -7,13 +7,13 @@ export default function App() {
       id: '1',
       titulo: 'Informação 1',
       descricao: 'Esta é a descrição da primeira informação.',
-      imagens: [require('./assets/imagem1.png')],
+      imagens: [require('assets/images/volkswagen_gol_5-door_95.jpg')],
     },
     {
       id: '2',
       titulo: 'Informação 2',
       descricao: 'Detalhes sobre a segunda informação.',
-      imagens: [require('./assets/imagem2.png')],
+      imagens: [require('assets/images/fiat-argo-drive-2021-prata-visto-de-frente.webp')],
     },
     {
       id: '3',
@@ -33,7 +33,7 @@ export default function App() {
       descricao: 'A última informação obrigatória.',
       imagens: [require('assets/images/volkswagen_gol_5-door_95.jpg')],
     },
-    // Você pode adicionar mais itens se desejar
+  
   ];
 
   const renderItem = ({ item }) => (
@@ -64,28 +64,28 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
-    backgroundColor: '#f0f0f0', // Adapte a sua temática
+    backgroundColor: '#f0f0f0', 
   },
   tituloPrincipal: {
     fontSize: 24,
     fontWeight: 'bold',
     marginBottom: 20,
     textAlign: 'center',
-    // Estilize a fonte conforme sua temática
+   
   },
   itemContainer: {
-    backgroundColor: '#fff', // Adapte a sua temática
+    backgroundColor: '#fff', 
     padding: 15,
     marginBottom: 15,
     borderRadius: 8,
     borderWidth: 1,
-    borderColor: '#ddd', // Adapte a sua temática
+    borderColor: '#ddd',  
   },
   itemTitulo: {
     fontSize: 18,
     fontWeight: 'bold',
     marginBottom: 10,
-    // Estilize a fonte conforme sua temática
+    
   },
   imagensContainer: {
     flexDirection: 'row',
@@ -100,7 +100,7 @@ const styles = StyleSheet.create({
   },
   itemDescricao: {
     fontSize: 16,
-    color: '#555', // Adapte a sua temática
-    // Estilize a fonte conforme sua temática
+    color: '#555', 
+   
   },
 });
